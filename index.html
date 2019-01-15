@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>はなまるママ</title>
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="inner">
+      <div class="flexbox">
+        <h1 class="logo">
+          <img src="images/logo.png" alt="ライフメール">
+        </h1>
+        <i class="menu_btn"></i>
+        <nav class="nav">
+          <ul>
+            <li><a href="">はなまるママとは</a></li>
+            <li><a href="">食品添加物の実態</a></li>
+            <li><a href="">無料のワケ</a></li>
+            <li><a href="">お母さんの口コミ</a></li>
+          </ul>
+        </nav>
+
+      </div>
+      <a class="btn" href="">無料サンプル申し込み</a>
+      </div>
+  </header>
+
+  <main class="main">
+
+    <section class="hero">
+      <div class="slick">
+        <div class="slide1"></div>
+        <div class="slide2"></div>
+        <div class="slide3"></div>
+      </div>
+    </section><!-- /hero -->
+  </main><!-- /main -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $('.slick').slick({
+    accessibility: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: false,
+    infinite: true,
+    pauseOnHover:true,
+    draggable: false
+});
+});
+// </script>
+</body>
+</html>

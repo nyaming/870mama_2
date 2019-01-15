@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/*---------------------
+  全体
+--------------------- */
+a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+*, *::before, * ::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "HalisR-Regular","游ゴシック体", "Yu Gothic", YuGothic,'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',Meiryo,'メイリオ',sans-serif;
+  font-size: 1.8rem;
+  color: #2e2e2e;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/*---------------------
+  ヘッダー・ナビ
+--------------------- */
+.header {
+  background-color: #fff;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  /* box-shadow: 0 3px 3px 0 rgba(255,255,255,0.3); */
+}
+
+.header .inner {
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 13px 13px;
+  position: relative;
+}
+.header .flexbox {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.header .logo {
+  width: 104px;
+  /* display: inline-block; */
+}
+.header .menu_btn {
+  display: none;
+}
+.header .nav {
+  /* display: inline-block; */
+  margin-right: auto;
+}
+.header .nav ul {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.header .nav ul li {
+  /* display: inline-block; */
+}
+.header .nav ul li a {
+  font-size: 1.3rem;
+  margin-left: 30px;
+}
+.header .nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.header .btn {
+  display: inline-block;
+  background-color: #3BB185;
+  border-radius: 5px;
+  box-shadow: 0 5px #2B906A;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 15px 20px;
+  line-height: 1.0;
+  position: absolute;
+right: 12px;
+top: 14px;
+}
+
+/*---------------------
+  メイン・スライダー
+--------------------- */
+.main {
+  display: block;
+  padding-top: 35px;
+  height: 800px;
+}
+.hero {
+  margin: 0 40px;
+  height: 500px;
+  /* overflow: hidden; */
+  position: relative;
+}
+.hero::after {
+  content: "古代から愛される\A玄米の栄養を\A現代に生きる私たちに。";
+  white-space: pre;
+  display: block;
+  position: absolute;
+  top: 350px;
+  right: 350px;
+  background-color: #fff;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-box-shadow: 3px 4px 5px rgba(0,0,0,0.3);
+  box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding: 25px 100px;
+  line-height: 3.5rem;
+
+}
+
+.slide1,
+.slide2,
+.slide3 {
+  height: 500px;
+  background: url("../images/header-001.png") no-repeat bottom center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.slide2 {
+  background: url("../images/header-002.png") no-repeat bottom center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.slide3 {
+  background: url("../images/header-003.png")no-repeat top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* 縦書き
+-webkit-writing-mode: vertical-rl;
+-ms-writing-mode: tb-rl;
+writing-mode: vertical-rl; */
+
+/* 擬似要素のcontent内でのテキスト改行
+A（option+¥)を入れる、white-space:pre
+ */
+
+/*  縦書きにした文字を要素ないで左右センター揃え
+ふつうにpadding入れるだけだった */
